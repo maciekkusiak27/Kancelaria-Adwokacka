@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: medium;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    left: -100%;
+    transition: 0.5s;
+    /* background: url(Mask\ Group.svg)no-repeat;
+    background-size: contain;
+    background-position: right; */
+    /* background: url(ball.svg)no-repeat;
+    background-size: cover;
+    background-position: right; */
+}
+
+#bckOne {
+    position: absolute;
+    right: 0;
+    z-index: -10;
+    top: 0;
+    height: 100vh;
+    transition: 0.7s ease-out;
+}
+
+#bckTwo {
+    position: absolute;
+    right: 100%;
+    z-index: -10;
+    top: 0;
+    height: 100vh;
+    transition: 0.2s ease-out;
+}
+
+#mobilka {
+    display: none;
+}
+
+.bckmove {
+    transform: translate(100%, 0);
+}
+
+.activeSection {
+    left: 0;
+}
+
+nav {
+    z-index: 1;
+    position: absolute;
+    top: 2%;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 3px;
+    align-items: center;
+    /* transition: .3s linear; */
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.navleft {
+    left: 8%;
+    /* transition: 0.3s linear; */
+}
+
+.navright {
+    right: 8%;
+    /* transition: 0.3s linear; */
+}
+
+nav div {
+    cursor: pointer;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+nav div:hover {
+    font-weight: 700;
+}
+
+#content {
+    max-width: 35%;
+    min-width: 400px;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 5%;
+    /* background-color: cadetblue; */
+}
+
+#home #content,
+#services #content {
+    left: 8%;
+}
+
+#aboutUs #content,
+#contact #content {
+    right: 8%;
+}
+
+#content h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5rem;
+    /* margin-bottom: 0.2 rem; */
+}
+
+#content h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    /* margin-bottom: 12px; */
+}
+
+#content p {
+    /* margin-bottom: 12px; */
+}
+
+.filler {
+    flex-grow: 0.3;
+}
+
+#contact #content {
+    width: 50%;
+    font-weight: 600;
+    text-align: center;
+}
+
+#contact #content span {
+    position: relative;
+    top: 15%;
+}
+
+.active {
+    font-weight: 900;
+}
+
+.lawyerimg {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    height: 100vh;
+    height: 100vh;
+    transition: right 3s linear;
+}
+
+#imgleft {
+    left: 1rem;
+    transition: left 3s linear;
+}
+
+
+#map {
+    width: 100%;
+    height: 50%;
+}
+
+#hamburger {
+    display: none;
+}
+
+#scrolltop {
+    display: none;
+}
+
+@media only screen and (max-width: 920px) {
+
+    .lawyerimg {
+        position: absolute;
+        bottom: 0;
+        right: -7rem;
+        height: 80vh;
+        transition: 0.3s;
+    }
+
+    #imgleft {
+        left: -7rem;
+    }
+}

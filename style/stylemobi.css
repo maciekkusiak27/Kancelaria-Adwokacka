@@ -1,0 +1,246 @@
+@media only screen and (max-width: 600px) {
+
+    /* @media only screen and (max-width: 00px) { */
+    * {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: nowrap; */
+        justify-content: flex-start;
+        height: 400vh;
+        overflow: scroll;
+    }
+
+    #bckOne,
+    #bckTwo {
+        display: none;
+    }
+
+    nav {
+        /* display: none; */
+        /* display: flex; */
+        /* display: none; */
+        flex-direction: column;
+        /* align-items: flex-start; */
+        width: 100%;
+        /* background-color: crimson; */
+        display: none;
+        /* transition: 0.2s linear; */
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li {
+        text-align: center;
+    }
+
+    nav div {
+        /* width: 100%; */
+        padding: .5rem 1rem;
+        /* background-color: crimson; */
+    }
+
+    nav div:hover {
+        background-color: white;
+
+    }
+
+    .navleft,
+    .navright {
+        left: 0;
+    }
+
+    #hamburger {
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        flex-direction: column;
+        top: 0.75rem;
+        right: 1rem;
+        font-size: 2rem;
+        z-index: 4;
+        cursor: pointer;
+    }
+
+    #scrolltop {
+        display: flex;
+        opacity: 0.2;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 0.75rem;
+        right: 1rem;
+        cursor: pointer;
+        z-index: 2;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        line-height: 7rem;
+        justify-content: center;
+    }
+
+    #scrolltop:hover {
+        opacity: 0.4;
+    }
+
+    .fa-arrow-up {
+        color: white;
+        font-size: 3rem;
+        position: relative;
+        text-align: center;
+        line-height: 7rem;
+    }
+
+    section {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: none;
+        /* background-color: chartreuse; */
+    }
+
+    #home {
+        top: 0;
+    }
+
+    #aboutUs {
+        top: 100vh;
+    }
+
+    #services {
+        top: 200vh;
+    }
+
+    #contact {
+        top: 300vh;
+    }
+
+    .lawyerimg {
+        display: none;
+        /* position: absolute;
+        bottom: 0;
+        right: -15%;
+        height: 70vh;
+        transition: 0.3s; */
+    }
+
+    #imgleft,
+    .leftBg {
+        background: none;
+    }
+
+    .on {
+        display: flex;
+        z-index: 1;
+        font-weight: normal;
+        align-items: flex-start;
+        width: 100%;
+        background-color: rgb(173, 185, 226);
+        position: fixed;
+        left: 0;
+        top: 0;
+        /* display: none; */
+    }
+
+    .on div {
+        width: 100%;
+    }
+
+    #content {
+        width: 100%;
+        /* background-color: chocolate; */
+        height: 100%;
+        /*
+        position: absolute;
+        top: 0;
+        min-width: none;
+        transform: translate(0, 0);
+        margin-right: 30%; 
+        */
+    }
+
+    #mobilka {
+        display: flex;
+        z-index: -3;
+        width: 200vw;
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0) rotate(0);
+        opacity: 0.6;
+    }
+
+    #home #content,
+    #services #content {
+        /* left: 8%; */
+    }
+
+    #aboutUs #content {
+        /* right: 8%; */
+    }
+
+    #contact #content {
+        /* width: 100vw;
+        text-align: center; */
+    }
+
+    #content h1 {
+        /* font-size: 3em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 5%; */
+        /* margin-bottom: 2px; */
+    }
+
+    #content h2 {
+        /* font-size: 1.5em;
+        font-weight: 600;
+        letter-spacing: 4px;
+        /* margin-bottom: 2px;
+        position: absolute;
+        top: 25%;
+        */
+    }
+
+    #content h3 {
+        /* font-size: 1em;
+        position: absolute;
+        top: 30%; */
+    }
+
+    #content p {
+        /* margin-bottom: 4px; */
+    }
+
+    .active {
+        font-weight: normal;
+    }
+
+    #contact #content span {
+        position: relative;
+        top: 15%;
+        flex-grow: 1;
+    }
+
+    #map {
+
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        border: 1px solid black;
+    }
+}
